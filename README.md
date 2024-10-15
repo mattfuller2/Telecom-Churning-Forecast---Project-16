@@ -2,14 +2,6 @@
 
 # Telecom Churn Forecasting Project
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Project Structure](#project-structure)
-3. [How to Use the Project](#how-to-use-the-project)
-4. [Key Findings](#key-findings)
-5. [Requirements](#requirements)
-6. [Conclusion](#conclusion)
-
 ## Project Overview
 The goal of this project was to forecast customer churn for a telecom operator, **Interconnect**. Churn prediction is critical for customer retention, as it allows the business to proactively target at-risk customers. This project involved cleaning, preprocessing, feature engineering, and training various machine learning models to predict customer churn. The models were evaluated using the **AUC-ROC** score, with the final solution being an ensemble model that combined several individual models to improve performance.
 
