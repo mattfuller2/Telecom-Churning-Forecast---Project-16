@@ -34,7 +34,7 @@ This repository contains the following files:
 ### Steps to Run the Project
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/your_username/telecom-churn-forecasting.git
+   git clone https://github.com/mattfuller2/telecom-churn-forecasting.git
 2. Install the required dependencies:
    pip install -r requirements
 3. Open Jupyter Notebook
