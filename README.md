@@ -9,10 +9,25 @@ The goal of this project was to forecast customer churn for a telecom operator, 
 This repository contains the following files:
 
 
-- **datasets/**: Includes the CSV files used for this project, such as contract, personal, internet, and phone datasets.
-- **notebooks/**: Contains the Jupyter Notebook(s) where data preprocessing, feature engineering, and model training took place.
-- **models/**: Placeholder for saving the trained models (optional).
-- **requirements.txt**: Lists all the libraries and packages needed to run the project.
+
+- **datasets/**:
+    - `contract.csv`: Contains customer contract details, such as `customerID`, `BeginDate`, `EndDate`, `ContractType`, and other related information.
+    - `personal.csv`: Contains customer demographic information, such as `customerID`, `Gender`, `Partner`, `Dependents`, etc.
+    - `internet.csv`: Contains data about the customer’s internet services, including whether they have services such as `OnlineSecurity`, `OnlineBackup`, `TechSupport`, and `StreamingTV`.
+    - `phone.csv`: Contains data about phone services, including whether the customer has `MultipleLines`.
+
+- **notebooks/**:
+    - `churn_prediction.ipynb`: This notebook contains the entire workflow of the project. It covers:
+        - Data loading and exploration.
+        - Data cleaning and preprocessing.
+        - Feature engineering (creating new features like `ContractDuration`, `TotalServices`, etc.).
+        - Handling class imbalance using **SMOTE**.
+        - Model training, hyperparameter tuning, and evaluation (using Logistic Regression, Random Forest, XGBoost, LightGBM, and an Ensemble Model).
+        - Evaluation of models using AUC-ROC and accuracy metrics.
+
+- **models/**:
+    - (Optional) This folder can be used to save trained models for future use or deployment (e.g., saving the ensemble model as `model.pkl`).
+    
 
 ## How to Use the Project
 
